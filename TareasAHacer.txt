@@ -1,0 +1,24 @@
+FUNCIONALIDADES:
+================
+
+-ACTIVY_PRINCIPAL: MENU CON LA VISTA PARA CARGAR.
+-MENU:
+ -NUEVO PEDIDO.
+ -VER PEDIDOS.
+ 
+-ACTIVITIES:
+ -NUEVO PEDIDO.
+ -VER PEDIDOS.
+ -EDITAR PEDIDO.
+ 
+-CONTROLADOR:
+ -List_Pedidos	
+ -Get_Pedido
+ -Save_Pedido
+ -List_Clientes (enviar por post el id del telefono encriptado con md5)
+ 
+-MODELO:
+ -PedidoDTO
+ -LineaPedidoDTO
+ -ClienteDTO
+ -ClientesRequestDTO

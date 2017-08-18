@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_list_pedidos"
+            android:icon="@drawable/streetview_black_54x54"
+            android:title="Pedidos" />
+        <item
+            android:id="@+id/nav_nuevo_pedido"
+            android:icon="@drawable/timeline_black_54x54"
+            android:title="Nuevo Pedido" />
+    </group>
+    <item android:title="Otros">
+        <menu>
+            <item
+                android:id="@+id/nav_configuracion"
+                android:icon="@drawable/settings_black_54x54"
+                android:title="Configuración" />
+        </menu>
+    </item>
+</menu>

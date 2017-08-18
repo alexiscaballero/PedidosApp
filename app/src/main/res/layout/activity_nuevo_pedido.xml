@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_nuevo_pedido"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.proyecto.geobus.menuActivities.NuevoPedidoActivity"
+    android:elevation="1dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/appBar"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.30">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"
+                android:elevation="0dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"
+                    android:text="Cliente"
+                    android:id="@+id/textView8"
+                    android:layout_below="@+id/textView7"
+                    android:textSize="@dimen/cast_libraries_material_featurehighlight_text_header_size"
+                    android:scrollbarSize="@dimen/cast_libraries_material_featurehighlight_text_body_size"
+                    android:layout_weight="0.050"
+                    android:gravity="center_vertical|center_horizontal" />
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"
+                    android:id="@+id/fClientes"
+                    android:hint="Recorrido"
+                    android:layout_below="@+id/textView7"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/cast_libraries_material_featurehighlight_text_body_size"
+                    android:layout_weight="0.10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"
+                android:layout_gravity="right|center_vertical">
+
+                <Button
+                    android:text="Actualizar Clientes"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/button_actualizar_clientes"
+                    android:layout_weight="0.05" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.50">
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/listView1"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.20"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="0.1">
+
+                <Button
+                    android:textColor="#000000"
+                    android:text="Agregar Línea"
+                    android:id="@+id/bt_agregar_linea"
+                    android:textSize="@dimen/cast_libraries_material_featurehighlight_text_body_size"
+                    android:elevation="0dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/scrollView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.05"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Guardar"
+                    android:id="@+id/bt_registrar_pedido"
+                    android:textSize="@dimen/cast_libraries_material_featurehighlight_text_body_size"
+                    android:elevation="0dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/scrollView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.05" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
